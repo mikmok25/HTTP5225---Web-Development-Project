@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC PART | RAM</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
 <?php
 include 'db.php';
 include 'partials/pagination.php';
@@ -80,4 +89,10 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
+
+?>
+    
+</body>
+</html>
+
 
