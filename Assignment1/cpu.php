@@ -75,15 +75,17 @@ if ($result->num_rows > 0) {
                 <th>Name</th>
                 <th>Brand</th>
                 <th>Speed</th>
+                <th>Socket</th>
                 <th>Cores</th>
                 <th>Threads</th>
             </tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
                   <td><img src='" . $row["image"] . "' alt='" . $row["name"] . "' width='50'></td>
-                  <td>" . $row["name"] . "</td>
+                  <td><a href='". $row["url"] . "' target='_blank'>" . $row["name"] . " </a></td>
                   <td>" . $row["brand"] . "</td>
                   <td>" . $row["speed"] . " GHz</td>
+                  <td>" . $row["socket"] . "</td>
                   <td>" . $row["coreCount"] . "</td>
                   <td>" . $row["threadCount"] . "</td>
               </tr>";
